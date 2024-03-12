@@ -1,6 +1,8 @@
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { useState } from 'react'
 import Logo from '../assets/react.svg'
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 const NavBar = () => {
 
     const [showSideMenuMobile, setShowSideMenuMobile] = useState(false);
@@ -24,6 +26,25 @@ const NavBar = () => {
                 <li>Work</li>
             </ul>
 
+            {/* Socials */}
+
+            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+                <ul>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600
+                    '>
+                        <a href="https://linkedin.com/in/pranith-shetty-67b287150" target="_blank">LinkedIn</a><FaLinkedin size={25} />
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900'>
+                        <a href="https://github.com/pranithshetty" target="_blank">GitHub</a><FaGithub size={25} />
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600'>
+                        <a href="" target="_blank">Email</a><HiOutlineMail size={25} />
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-400'>
+                        <a href="" target="_blank">Resume</a><BsFillPersonLinesFill size={25} />
+                    </li>
+                </ul>
+            </div>
 
             {/* Mobile view */}
             <div onClick={handleShowMenuMobile} className='cursor-pointer md:hidden z-10'>
