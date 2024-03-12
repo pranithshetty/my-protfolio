@@ -23,7 +23,7 @@ const NavBar = () => {
                 <li>Home</li>
                 <li>About</li>
                 <li>Skills</li>
-                <li>Work</li>
+                {/* <li>Work</li> */}
             </ul>
 
             {/* Socials */}
@@ -56,7 +56,7 @@ const NavBar = () => {
                     <li className='py-6 text-4xl '>Home</li>
                     <li className='py-6 text-4xl '>About</li>
                     <li className='py-6 text-4xl '>Skills</li>
-                    <li className='py-6 text-4xl '>Work</li>
+                    {/* <li className='py-6 text-4xl '>Work</li> */}
                 </ul>
             </div>}
         </div>
