@@ -1,10 +1,13 @@
 # My Portfolio
 
+A react app to showcase my portfolio.
+
 ## Tech stack
 
 React
 Typescript
 VITE
+Vercel
 
 ## Libraries
 
