@@ -8,7 +8,8 @@ VITE
 
 ## Libraries
 
-React Icons (https://react-icons.github.io/react-icons/)
+React Icons (ref: https://react-icons.github.io/react-icons/)
+React Scroll: For scroll animations
 
 ## External dependency
 
