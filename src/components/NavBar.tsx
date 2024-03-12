@@ -1,9 +1,10 @@
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { useState } from 'react'
-import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Resume from '../assets/Resume.pdf'
+import { HiOutlineMail } from 'react-icons/hi';
 import Logo from './Logo';
+import { useState } from 'react'
+import Resume from '../assets/Resume.pdf'
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
 
@@ -20,13 +21,36 @@ const NavBar = () => {
             {/* Nav sections PC */}
 
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
+
+                <li>
+                    <Link to="hero"
+                        smooth={true}
+                        duration={500} >
+                        Home
+                    </Link></li>
+                <li>
+                    <Link to="about"
+                        smooth={true}
+                        duration={500} >
+                        About
+                    </Link></li>
+                <li>
+                    <Link to="skills"
+                        smooth={true}
+                        duration={500} >
+                        Skills
+                    </Link>
+                </li>
                 {/* <li>Work</li> */}
+                <li>
+                    <Link to="contact"
+                        smooth={true}
+                        duration={500} >
+                        Contact Me
+                    </Link></li>
             </ul>
 
-            {/* Socials */}
+            {/* Socials pc */}
 
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
@@ -46,20 +70,46 @@ const NavBar = () => {
                 </ul>
             </div>
 
+
             {/* Mobile view */}
             <div onClick={handleShowMenuMobile} className='cursor-pointer md:hidden z-10'>
                 {showSideMenuMobile ? <FaTimes /> : <FaBars />}
             </div>
 
-            {showSideMenuMobile && <div className='absolute top-0 left-0 w-full h-screen  bg-slate-900 flex flex-col justify-center items-center md:hidden'>
-                <ul>
-                    <li className='py-6 text-4xl '>Home</li>
-                    <li className='py-6 text-4xl '>About</li>
-                    <li className='py-6 text-4xl '>Skills</li>
-                    {/* <li className='py-6 text-4xl '>Work</li> */}
-                </ul>
-            </div>}
-        </div>
+            {
+                showSideMenuMobile && <div className='absolute top-0 left-0 w-full h-screen  bg-slate-900 flex flex-col justify-center items-center md:hidden'>
+                    <ul>
+                        <li className='py-6 text-4xl '>
+                            <Link onClick={handleShowMenuMobile} to="hero"
+                                smooth={true}
+                                duration={500} >
+                                Home
+                            </Link></li>
+                        <li className='py-6 text-4xl '>
+                            <Link onClick={handleShowMenuMobile} to="about"
+                                smooth={true}
+                                duration={500} >
+                                About
+                            </Link></li>
+                        <li className='py-6 text-4xl '>
+                            <Link onClick={handleShowMenuMobile} to="skills"
+                                smooth={true}
+                                duration={500} >
+                                Skills
+                            </Link></li>
+                        {/* <li className='py-6 text-4xl '>Work</li> */}
+                        <li className='py-6 text-4xl '>
+                            <Link onClick={handleShowMenuMobile} to="contact"
+                                smooth={true}
+                                duration={500} >
+                                Contact Me
+                            </Link></li>
+                    </ul>
+
+
+                </div>
+            }
+        </div >
     )
 }
 
