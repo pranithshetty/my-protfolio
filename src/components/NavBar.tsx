@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Logo from '../assets/react.svg'
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import Resume from '../assets/Resume.pdf'
 const NavBar = () => {
 
     const [showSideMenuMobile, setShowSideMenuMobile] = useState(false);
@@ -38,10 +39,10 @@ const NavBar = () => {
                         <a href="https://github.com/pranithshetty" target="_blank">GitHub</a><FaGithub size={25} />
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600'>
-                        <a href="" target="_blank">Email</a><HiOutlineMail size={25} />
+                        <a href="mailto:shetty.praneeth4@gmail.com">Email</a><HiOutlineMail size={25} />
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-400'>
-                        <a href="" target="_blank">Resume</a><BsFillPersonLinesFill size={25} />
+                        <a href={Resume} target="_blank">Resume</a><BsFillPersonLinesFill size={25} />
                     </li>
                 </ul>
             </div>
