@@ -1,9 +1,10 @@
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { useState } from 'react'
-import Logo from '../assets/react.svg'
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Resume from '../assets/Resume.pdf'
+import Logo from './Logo';
+
 const NavBar = () => {
 
     const [showSideMenuMobile, setShowSideMenuMobile] = useState(false);
@@ -15,9 +16,7 @@ const NavBar = () => {
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4  bg-slate-900 text-gray-200">
 
             {/* logo */}
-            <div>
-                <img src={Logo} alt="My-Logo" />
-            </div>
+            <Logo />
             {/* Nav sections PC */}
 
             <ul className='hidden md:flex'>
@@ -39,7 +38,7 @@ const NavBar = () => {
                         <a href="https://github.com/pranithshetty" target="_blank">GitHub</a><FaGithub size={25} />
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600'>
-                        <a href="mailto:shetty.praneeth4@gmail.com">Email</a><HiOutlineMail size={25} />
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shetty.praneeth4@gmail.com" target="_blank">Email</a><HiOutlineMail size={25} />
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-400'>
                         <a href={Resume} target="_blank">Resume</a><BsFillPersonLinesFill size={25} />

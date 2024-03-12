@@ -14,24 +14,12 @@ const Skills = () => {
 
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <FaHtml5 size={40} className="w-20 mx-auto" />
-                        <p className='my-4'>HTML</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <FaCss3Alt size={40} className="w-20 mx-auto" />
-                        <p className='my-4'>CSS</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <IoLogoJavascript size={40} className="w-20 mx-auto" />
-                        <p className='my-4'>JAVASCRIPT</p>
-                    </div>
-                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <FaReact size={40} className="w-20 mx-auto" />
                         <p className='my-4'>REACT</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                        <FaGithub size={50} className="w-20 mx-auto" />
-                        <p className='my-4'>GITHUB</p>
+                        <IoLogoJavascript size={40} className="w-20 mx-auto" />
+                        <p className='my-4'>JAVASCRIPT</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <DiNodejs size={60} className="w-20 mx-auto" />
@@ -42,12 +30,25 @@ const Skills = () => {
                         <p className='my-4'>MONGO DB</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <FaHtml5 size={40} className="w-20 mx-auto" />
+                        <p className='my-4'>HTML</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <FaCss3Alt size={40} className="w-20 mx-auto" />
+                        <p className='my-4'>CSS</p>
+                    </div>
+
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <SiTailwindcss size={50} className="w-20 mx-auto" />
                         <p className='my-4'>TAILWIND</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <SiFirebase size={40} className="w-20 mx-auto" />
                         <p className='my-4'>FIREBASE</p>
+                    </div>
+                    <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                        <FaGithub size={50} className="w-20 mx-auto" />
+                        <p className='my-4'>GITHUB</p>
                     </div>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <FaAngular size={40} className="w-20 mx-auto" />
