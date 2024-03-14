@@ -31,7 +31,7 @@ const Hero = () => {
                 </div>
                 {/* Socials mobile */}
                 <div className='text-white pt-2 lg:hidden'>
-                    <ul className='flex flex-row justify-between'>
+                    <ul className='grid grid-cols-2 gap-3'>
                         <li className='w-full h-[40px] flex justify-between items-center bg-blue-600
                     '>
                             <a href="https://linkedin.com/in/pranith-shetty-67b287150" target="_blank">LinkedIn</a><FaLinkedin size={25} />
